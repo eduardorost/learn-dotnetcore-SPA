@@ -30,6 +30,8 @@ namespace WebApplication
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            Console.WriteLine("----------------------------------" + Configuration["Deploy:ENV"]);
         }
 
         public IConfigurationRoot Configuration { get; }
